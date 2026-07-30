@@ -244,21 +244,42 @@
 #    - One digit
 #    - One special character
 
-password = input(str("Enter the password"))
+# password = input(str("Enter the password"))
 
-upper = lower = digit = special = False
+# upper = lower = digit = special = False
 
-for ch in password:
-    if ch.isupper():
-        upper = True
-    elif ch.islower():
-        lower = True
-    elif ch.isdigit():
-        digit = True
+# for ch in password:
+#     if ch.isupper():
+#         upper = True
+#     elif ch.islower():
+#         lower = True
+#     elif ch.isdigit():
+#         digit = True
+#     else:
+#         special = True
+
+# if len(password) >= 8 and upper and lower and digit and special:
+#     print("Valid Password")
+# else:
+#     print("Invalid Password")
+
+
+# 22.	Run-Length Encoding
+# ●	Compress a string by counting consecutive repeated characters. 
+# ●	Example:
+# 	Input: aaabbccccd
+# 	Output: a3b2c4d1
+
+s = "aaabbccccd"
+result = ""
+count = 1
+
+for i in range(1, len(s)):
+    if s[i] == s[i - 1]:
+        count += 1
     else:
-        special = True
+        result +=  s[i - 1] + str(count)
+        count = 1
 
-if len(password) >= 8 and upper and lower and digit and special:
-    print("Valid Password")
-else:
-    print("Invalid Password")
+result +=  s[-1] + str(count)
+print(result)
