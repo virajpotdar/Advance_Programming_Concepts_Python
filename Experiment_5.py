@@ -65,7 +65,7 @@ print("Current Date and Time:", datetime.datetime.now())
 #             print("Invalid Choice")
             
 # 3 Third-party module
-import numpy as np
+import numpy as np # type: ignore
 nums = np.array([10, 20, 30, 40, 50])
 
 print("Array:", nums)
