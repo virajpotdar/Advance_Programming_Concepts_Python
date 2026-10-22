@@ -1,7 +1,6 @@
 
 import matplotlib.pyplot as plt
 
-# Data
 students = ["A", "B", "C", "D", "E"]
 marks = [75, 85, 60, 90, 70]
 
@@ -14,12 +13,12 @@ plt.ylabel("Marks")
 plt.show()
 
 # 2. Bar Chart
-# plt.figure()
-# plt.bar(students, marks)
-# plt.title("Bar Chart")
-# plt.xlabel("Students")
-# plt.ylabel("Marks")
-# plt.show()
+plt.figure()
+plt.bar(students, marks)
+plt.title("Bar Chart")
+plt.xlabel("Students")
+plt.ylabel("Marks")
+plt.show()
 
 # 3. Scatter Plot
 # plt.figure()
@@ -36,6 +35,26 @@ plt.show()
 # plt.xlabel("Marks")
 # plt.ylabel("Frequency")
 # plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 5. Pie Chart
 # plt.figure()

@@ -7,11 +7,12 @@
 # Expo
 # .csv
 
+
 import numpy as np
 import pandas as pd
 
 a = np.array([1,2,3,4])
-print("\n1D:", a)
+print("\n1D:",a)
 
 b = np.array([[1,2],[3,4]])
 print("\n2D:",b)
@@ -21,6 +22,15 @@ print("\n3D:",c)
 
 print("\nTranspose of 2D array of a:")
 print(a.T)
+
+print("\nTranspose of 2D array of b:")
+print(b.T)
+
+print("\nTranspose of 2D array of c:")
+print(c.T)
+
+
+# Matrix operations using Numpy 
 
 m1 = np.array([[1,2],[3,4]])
 m2 = np.array([[5,6],[7,8]])
@@ -33,15 +43,28 @@ print("\nMatrix Multiplication:\n",m1*m2)
 
 print("\nMatrix Division:\n",m1/m2)
 
-print("\nExponential of 1D array:",np.exp(a))
 
+# Expoential of Arrays using numpy 
+
+print("\nExponential of 1D array:",np.exp(a))
+print("\nExponential of 2D array:",np.exp(b))
+print("\nExponential of 3D array:",np.exp(c))
+
+
+# Pandas Series 
 print("\nPandas Series with labels:")
 s = pd.Series([10, 20, 30, 40], index=['A','B','C','D'])
 print(s)
 
+# Dataframe in Pandas
 print("\nDataFrame example:")
 df = pd.DataFrame({'Name':['Viraj','Raj','Rahul'],'Marks':[80,85,70]})
 print(df)
 
+# Reading data using pandas
 csv_file = 'student_data.csv'
 print(pd.read_csv(csv_file))
+
+
+
+

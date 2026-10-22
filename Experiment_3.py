@@ -36,6 +36,7 @@
 
 
 
+
 # # 3.	Reverse a String 
 # # ●	Reverse the given string without using built-in reverse functions. 
 # str = "Python"
@@ -83,7 +84,6 @@
 # print(result)
 
 
-
 # Remove Spaces 
 # ●	Remove all spaces from the input string. 
 
@@ -93,7 +93,7 @@
 
 
 
-# 8.	Frequency of a Character 
+# 8.Frequency of a Character 
 # ●	Find the number of times a specified character appears in a string. 
 # text = "banana"
 # freq = {}
@@ -132,6 +132,7 @@
 # a.	Count the total number of words in a sentence. 
 # text="Python is fun"
 # words=text.split()
+# print(words)
 # count=0
 # if " ":
 #         count=len(words)
@@ -145,6 +146,7 @@
 # text="Python is a programming language"
 # words = text.split()
 # longest = ""
+
 
 # for word in words:
 #     if len(word) > len(longest):
@@ -274,13 +276,21 @@ s = "aaabbccccd"
 result = ""
 count = 1
 
-for i in range(1, len(s)):
-    if s[i] == s[i - 1]:
-        count += 1
+for ch in range(1,len(s)):
+    if s[ch]==s[ch-1]:
+        count+=1
     else:
-        result +=  s[i - 1] + str(count)
-        count = 1
+        result+=s[ch-1]+str(count)
+        count=1
+result+=s[-1]+str(count)
 
-result +=  s[-1] + str(count)
 print(result)
+
+
+
+
+
+
+
+
 

@@ -113,16 +113,6 @@
 
 import re
 
-
-def check_email(email):
-    pattern = r"^[\w.-]+@[\w.-]+\.\w+$"
-
-    if re.match(pattern, email):
-        print("Valid Email")
-    else:
-        print("Invalid Email")
-
-
 def check_phone(phone):
     pattern = r"^[0-9]{10}$"
 
@@ -142,10 +132,8 @@ def check_password(password):
         print("Invalid Password")
 
 
-email = input("Enter Email: ")
 phone = input("Enter Phone Number: ")
 password = input("Enter Password: ")
 
-check_email(email)
 check_phone(phone)
 check_password(password)

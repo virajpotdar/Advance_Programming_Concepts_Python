@@ -41,18 +41,15 @@
 
 
 # # Program 3: Polymorphism through operator overloading
-# class Number:
-# 	def __init__(self, value):
-# 		self.value = value
+# class Addition:
+#     def __init__(self, a):
+#         self.a = a
 
-# 	def __add__(self, other):
-# 		return Number(self.value + other.value)
-
-# 	def __str__(self):
-# 		return str(self.value)
+#     def __add__(self, other):
+#         return self.a + other.a
 
 
-# print("\nOperator overloading")
-# first_number = Number(10)
-# second_number = Number(20)
-# print("Sum:", first_number + second_number)
+# obj1 = Addition(10)
+# obj2 = Addition(20)
+
+# print("Addition:", obj1 + obj2)

@@ -32,22 +32,16 @@ class BankAccount:
         else:
             print("Insufficient balance for transfer")
 
-
-# Creating two accounts
 account1 = BankAccount("Rahul")
 account2 = BankAccount("Amit")
 
-# Deposit money
 account1.deposit(5000)
 account2.deposit(3000)
 
-# Withdraw money
 account1.withdraw(1000)
 
-# Transfer money
 account1.transfer(2000, account2)
 
-# Display balances
 print("\nAccount 1:")
 account1.display_balance()
 
