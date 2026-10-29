@@ -1,4 +1,4 @@
-#Q1  Program to create student.txt and write student details
+#Q1 Program to create student.txt and write student details
 
 # file = open("student.txt", "w")
 
@@ -6,7 +6,6 @@
 # file.write("Roll Number: 101\n")
 # file.write("Branch: Computer Science and Engineering\n")
 # file.write("Semester: V\n")
-
 # file.close()
 
 # print("Student details written successfully.")
@@ -17,6 +16,7 @@
 # file=open("student.txt","r")
 # reading=file.read()
 # print(reading)
+
 
 # Q3 append additional student information to an existing file without deleting its previous contents. 
 
@@ -44,7 +44,6 @@
 # for line in file:
 #     count+=1
 # print("Total number of lines:",count)
-
 # file.close()
 
 
